@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+#heading{
+    padding: 15px;
+    color: black;
+    font-size: 28px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 15px black;
+
+}
+
+#volume, #speed{
+    mix-blend-mode: screen;
+}
+#disk1, #disk2{
+    width: 300px;
+    display: flex;
+    margin-top: -30px;
+}
+
+#volume{
+    float: left;
+    
+}
+
+
+#speed{
+    float: right;
+}
+
+
+#play_btn{
+    margin-top: 15px;
+    padding: 15px; 
+    padding-bottom: 20px;
+    background-color: rgb(189, 47, 189);
+    color:white;
+    outline: none;
+    border: 3px solid yellow;
+    border-radius: 14px;
+    font-size: 24px;
+    width: 150px;
+    box-shadow: 0 0 30px 7px rgb(255, 255, 255);
+}
+
+#vol_text, #speed_text{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+canvas{
+    margin-top: 17%;
+    border-radius: 24px;
+    border: 5px solid lightgreen;
+}
+
+#smalldisk1{
+    width: 200px;
+    /* margin-right: 20px; */
+}
+
+#smalldisk2{
+    width: 200px;
+    /* margin-right: 20px; */
+}

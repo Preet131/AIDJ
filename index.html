@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI DJ WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body background="background.jpg">
+<center>
+  	<h3 id="heading" class="btn btn-warning">AI DJ WEB APP
+	    <br>
+	    <br>
+	    <span>NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
+        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
+	<br><br>
+  <div id="speed">
+  <img id="smalldisk1" src="disk.gif">
+  <img id="disk1" src="disk.gif">
+  <h3 class="btn btn-danger" id="speed_text">Speed: </h3>
+</div>
+<button id="play_btn" onclick="play();" class="glyphicon glyphicon-play"> Play</button>
+<div id="volume">
+  <img id="smalldisk2" src="disk.gif">
+  <img id="disk2" src="disk.gif">
+  <h3 class="btn btn-danger" id="vol_text">Volume: </h3>
+</div>
+<br>
+<br>
+<select id="music_selecter">
+  <option value="music1.mp3">Harry Potter Theme</option>
+  <option value="music2.mp3">Peaky Blinders </option>
+  <option value="music3.mp3">Dj Snake Magenta Riddim</option>
+  <option value="music4.mp3">Joker BGM</option>
+  <option value="music5.mp3">Walk Thru Fire</option>
+</select>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
